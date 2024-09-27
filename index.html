@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="   https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main_row gap-3 pt-4 d-flex justify-content-center">
+        <div class="col main_column rounded p-4">
+          <div class="page1">
+            <h4>Basic Details</h4>
+
+            <label
+              for="upload"
+              class="img_upload d-flex flex-column align-items-center p-4 mb-4"
+            >
+              <i style="color: #4318ff" class="fa-solid fa-upload"></i>
+              <h5 style="color: #4318ff">Upload Image</h5>
+              <h6 style="color: #8f9bba">PNG, JPG files are allowed</h6>
+              <input type="file" id="upload" hidden />
+            </label>
+
+            <div class="row d-flex justify-content-center">
+              <div class="col">
+                <label for="disabledSelect" class="form_label mand"
+                  >Salutation</label
+                >
+                <select id="disabledSelect" class="form-select p-input">
+                  <option selected>select</option>
+                  <option value="1">Mr.</option>
+                  <option value="2">Mrs.</option>
+                  <option value="3">Ms.</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="disabledTextInput" class="form_label mand"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="john"
+                />
+              </div>
+              <div class="col">
+                <label for="disabledTextInput" class="form_label mand"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="doe"
+                />
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control p-input"
+                  id="disabledTextInput"
+                  placeholder="abc@123.com"
+                />
+              </div>
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Mobile Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control p-input"
+                  id="disabledTextInput"
+                  placeholder="enter mobile number"
+                />
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  class="form-control p-input"
+                  id="disabledTextInput"
+                  placeholder="select date of birth"
+                />
+              </div>
+
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Gender</label
+                >
+                <div class="gender-radio">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <span>
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Male</label
+                    ></span
+                  >
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio2"
+                    value="option1"
+                  />
+                  <span>
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Female</label
+                    ></span
+                  >
+                </div>
+              </div>
+
+
+
+              <div class="row d-flex p-0">
+                <div class="col">
+                  <label for="exampleFormControlInput1" class="form_label mand"
+                    >Address</label
+                  >
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control p-input"
+                    placeholder="enter address"
+                  />
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+              <div class="row p-0">
+                <div class="col-6">
+                  <label for="disabledSelect" class="form_label mand"
+                    >Country</label
+                  >
+                  <select id="disabledSelect" class="form-select p-input">
+                    <option>select country</option>
+                    <option value="1">India</option>
+                    <option value="2">United States</option>
+                    <option value="3">Russia</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-6">
+                  <label for="disabledSelect" class="form_label mand"
+                    >State</label
+                  >
+                  <select id="disabledSelect" class="form-select p-input">
+                    <option>select state</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+
+                </div>
+                <div class="row p-0">
+                <div class="col-6">
+                  <label for="exampleFormControlInput1" class="form-label mand"
+                    >City</label
+                  >
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control p-input"
+                    placeholder="enter city"
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+                <div class="col-6">
+                  <label for="exampleFormControlInput1" class="form_label mand"
+                    >Pin/Zip</label
+                  >
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control p-input"
+                    placeholder="enter zip/pin"
+                  />
+                  <div class="invalid-feedback">Zip code required.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- seperation between first and second main column -->
+
+        <div style="background-color: #fff" class="col main_column rounded p-4">
+          <div class="page2">
+            <h4>Advanced Details</h4>
+
+            <div class="alert alert_box">
+              <span>
+                <label class="alert-title"
+                  >Sample warning messages - alert</label
+                ></span
+              >
+              <span
+                ><label class="alert-content"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus sed fermentum felis. Aliquam erat volutpat. Donec
+                  faucibus mauris vel nibh sodales feugiat. Donec suscipit felis
+                  vitae orci porttitor congue.</label
+                ></span
+              >
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="customRange1" class="form_label mand">Height</label>
+                <input
+                  type="range"
+                  class="form-range input"
+                  id="customRange1"
+                />
+              </div>
+              <div class="col pt-1">
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control form-label heading mt-3"
+                  placeholder="160 cm"
+                  disabled
+                />
+              </div>
+              <div class="col">
+                <label for="customRange1" class="form_label mand">Weight</label>
+                <input
+                  type="range"
+                  class="form-range input"
+                  id="customRange1"
+                />
+              </div>
+
+              <div class="col pt-1">
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control form-label heading mt-3"
+                  placeholder="68 kg"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="exampleColorInput" class="form_label mand"
+                  >Choose Color</label
+                >
+                <input
+                  type="color"
+                  class="form-control form-control-color"
+                  id="exampleColorInput"
+                  value="#CB5D9F"
+                  title="Choose your color"
+                />
+              </div>
+
+              <div class="form-group col-md-8">
+                <label for="Templates" class="form_label mand"
+                  >Choose Templates</label
+                >
+                <div class="checkbox-container mt-1">
+                  <div class="form-check form-check-inline me-1">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox"
+                      value="option1"
+                    />
+                    <span
+                      ><label
+                        class="form-check-label me-1"
+                        for="inlineCheckbox1"
+                        >Templates 1</label
+                      ></span
+                    >
+                  </div>
+                  <div class="form-check form-check-inline me-1">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox"
+                      value="option1"
+                    />
+                    <span
+                      ><label
+                        class="form-check-label me-1"
+                        for="inlineCheckbox1"
+                        >Templates 2</label
+                      ></span
+                    >
+                  </div>
+                  <div class="form-check form-check-inline me-1">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox"
+                      value="option1"
+                    />
+                    <span
+                      ><label
+                        class="form-check-label me-1"
+                        for="inlineCheckbox1"
+                        >Templates 3</label
+                      ></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span>
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form_label nonmand"
+                    >Qualifications</label
+                  ></span
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="enter qualifications"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >About Your Self</label
+                >
+
+                <textarea
+                  class="form-control area"
+                  aria-label="With textarea"
+                  placeholder="enter here..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckIndeterminate"
+                />
+                <span>
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form_label nonmand"
+                    >I Accept Terms & Conditions</label
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: #fff" class="col-12 p-4 rounded">
+          <div
+            class="d-flex align-items-center justify-content-end button-section"
+          >
+            <button  style="background: #FAF9FF;"  class="btn">Cancel</button>
+            <button class="btn btn-primary mx-4" type="submit">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
