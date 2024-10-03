@@ -26,7 +26,7 @@
   <body>
     <div class="container">
       <div class="row main_row gap-3 pt-4 d-flex justify-content-center">
-        <div class="col main_column rounded p-4">
+        <div class="col-lg main_column rounded p-4">
           <div class="page1">
             <h4>Basic Details</h4>
 
@@ -41,7 +41,7 @@
             </label>
 
             <div class="row d-flex justify-content-center">
-              <div class="col">
+              <div class="col-md">
                 <label for="disabledSelect" class="form_label mand"
                   >Salutation</label
                 >
@@ -52,7 +52,7 @@
                   <option value="3">Ms.</option>
                 </select>
               </div>
-              <div class="col">
+              <div class="col-md">
                 <label for="disabledTextInput" class="form_label mand"
                   >First Name</label
                 >
@@ -63,7 +63,7 @@
                   placeholder="john"
                 />
               </div>
-              <div class="col">
+              <div class="col-md">
                 <label for="disabledTextInput" class="form_label mand"
                   >Last Name</label
                 >
@@ -76,7 +76,7 @@
               </div>
             </div>
             <div class="row d-flex justify-content-center">
-              <div class="col">
+              <div class="col-md">
                 <label for="exampleFormControlInput1" class="form_label mand"
                   >Email address</label
                 >
@@ -87,7 +87,7 @@
                   placeholder="abc@123.com"
                 />
               </div>
-              <div class="col">
+              <div class="col-md">
                 <label for="exampleFormControlInput1" class="form_label mand"
                   >Mobile Number</label
                 >
@@ -101,19 +101,19 @@
             </div>
 
             <div class="row d-flex justify-content-center">
-              <div class="col">
+              <div class="col-md">
                 <label for="exampleFormControlInput1" class="form_label mand"
                   >Date of Birth</label
                 >
                 <input
                   type="date"
                   class="form-control p-input"
-                  id="disabledTextInput"
+                  id="disabledTextInput1"
                   placeholder="select date of birth"
                 />
               </div>
 
-              <div class="col">
+              <div class="col-md">
                 <label for="exampleFormControlInput1" class="form_label mand"
                   >Gender</label
                 >
@@ -144,91 +144,77 @@
                   >
                 </div>
               </div>
+            </div>
 
+            <div class="row d-flex">
+              <div class="col">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="enter address"
+                />
+              </div>
+            </div>
 
-
-              <div class="row d-flex p-0">
-                <div class="col">
-                  <label for="exampleFormControlInput1" class="form_label mand"
-                    >Address</label
-                  >
-                  <input
-                    type="text"
-                    id="disabledTextInput"
-                    class="form-control p-input"
-                    placeholder="enter address"
-                  />
+            <div class="row d-flex">
+              <div class="col-md-6">
+                <label for="disabledSelect" class="form_label mand"
+                  >Country</label
+                >
+                <select id="disabledSelect" class="form-select p-input">
+                  <option>select country</option>
+                  <option value="1">India</option>
+                  <option value="2">United States</option>
+                  <option value="3">Russia</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
-
-              <div class="row p-0">
-                <div class="col-6">
-                  <label for="disabledSelect" class="form_label mand"
-                    >Country</label
-                  >
-                  <select id="disabledSelect" class="form-select p-input">
-                    <option>select country</option>
-                    <option value="1">India</option>
-                    <option value="2">United States</option>
-                    <option value="3">Russia</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid country.
-                  </div>
+              <div class="col-md-6">
+                <label for="disabledSelect" class="form_label mand"
+                  >State</label
+                >
+                <select id="disabledSelect" class="form-select p-input">
+                  <option>select state</option>
+                  <option value="1">option 1</option>
+                  <option value="2">option 2</option>
+                  <option value="3">option 3</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
                 </div>
-                <div class="col-6">
-                  <label for="disabledSelect" class="form_label mand"
-                    >State</label
-                  >
-                  <select id="disabledSelect" class="form-select p-input">
-                    <option>select state</option>
-                    <option value="1">option 1</option>
-                    <option value="2">option 2</option>
-                    <option value="3">option 3</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please provide a valid state.
-                  </div>
-                </div>
+              </div>
+            </div>
 
-
-                </div>
-                <div class="row p-0">
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form-label mand"
-                    >City</label
-                  >
-                  <input
-                    type="text"
-                    id="disabledTextInput"
-                    class="form-control p-input"
-                    placeholder="enter city"
-                  />
-                  <div class="invalid-feedback">
-                    Please provide a valid state.
-                  </div>
-                </div>
-                <div class="col-6">
-                  <label for="exampleFormControlInput1" class="form_label mand"
-                    >Pin/Zip</label
-                  >
-                  <input
-                    type="text"
-                    id="disabledTextInput"
-                    class="form-control p-input"
-                    placeholder="enter zip/pin"
-                  />
-                  <div class="invalid-feedback">Zip code required.</div>
-                </div>
+            <div class="row d-flex">
+              <div class="col-md">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >City</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="enter city"
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>
+              <div class="col-md">
+                <label for="exampleFormControlInput1" class="form_label mand"
+                  >Pin/Zip</label
+                >
+                <input
+                  type="text"
+                  id="disabledTextInput"
+                  class="form-control p-input"
+                  placeholder="enter zip/pin"
+                />
+                <div class="invalid-feedback">Zip code required.</div>
               </div>
             </div>
           </div>
@@ -236,7 +222,7 @@
 
         <!-- seperation between first and second main column -->
 
-        <div style="background-color: #fff" class="col main_column rounded p-4">
+        <div class="col-lg main_column rounded p-4">
           <div class="page2">
             <h4>Advanced Details</h4>
 
@@ -256,47 +242,51 @@
               >
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-md customrange">
                 <label for="customRange1" class="form_label mand">Height</label>
-                <input
-                  type="range"
-                  class="form-range input"
-                  id="customRange1"
-                />
-              </div>
-              <div class="col pt-1">
-                <input
-                  type="text"
-                  id="disabledTextInput"
-                  class="form-control form-label heading mt-3"
-                  placeholder="160 cm"
-                  disabled
-                />
-              </div>
-              <div class="col">
-                <label for="customRange1" class="form_label mand">Weight</label>
-                <input
-                  type="range"
-                  class="form-range input"
-                  id="customRange1"
-                />
+                <div class="height_weight d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="form-range input"
+                    id="customRange1"
+                  />
+
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control form-label heading mt-3"
+                    placeholder="160 cm"
+                    disabled
+                  />
+                </div>
               </div>
 
-              <div class="col pt-1">
-                <input
-                  type="text"
-                  id="disabledTextInput"
-                  class="form-control form-label heading mt-3"
-                  placeholder="68 kg"
-                  disabled
-                />
+              <div class="col-md customrange">
+                <label for="customRange1" class="form_label mand">Weight</label>
+                <div class="height_weight d-flex align-items-center">
+                  <input
+                    type="range"
+                    class="form-range input"
+                    id="customRange1"
+                  />
+
+                  <input
+                    type="text"
+                    id="disabledTextInput"
+                    class="form-control form-label heading mt-3"
+                    placeholder="68 kg"
+                    disabled
+                  />
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col">
+
+            <div class="row color_temp d-flex">
+              <div class="col color">
                 <label for="exampleColorInput" class="form_label mand"
                   >Choose Color</label
                 >
+
                 <input
                   type="color"
                   class="form-control form-control-color"
@@ -306,11 +296,11 @@
                 />
               </div>
 
-              <div class="form-group col-md-8">
+              <div class="col template">
                 <label for="Templates" class="form_label mand"
                   >Choose Templates</label
                 >
-                <div class="checkbox-container mt-1">
+                <div class="checkbox_container d-flex mt-1">
                   <div class="form-check form-check-inline me-1">
                     <input
                       class="form-check-input"
@@ -322,7 +312,7 @@
                       ><label
                         class="form-check-label me-1"
                         for="inlineCheckbox1"
-                        >Templates 1</label
+                        >Template 1</label
                       ></span
                     >
                   </div>
@@ -337,7 +327,7 @@
                       ><label
                         class="form-check-label me-1"
                         for="inlineCheckbox1"
-                        >Templates 2</label
+                        >Template 2</label
                       ></span
                     >
                   </div>
@@ -352,13 +342,14 @@
                       ><label
                         class="form-check-label me-1"
                         for="inlineCheckbox1"
-                        >Templates 3</label
+                        >Template 3</label
                       ></span
                     >
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col">
                 <span>
@@ -390,7 +381,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col d-flex gap-2">
                 <input
                   class="form-check-input"
                   type="checkbox"
@@ -408,12 +399,15 @@
             </div>
           </div>
         </div>
-        <div style="background-color: #fff" class="col-12 p-4 rounded">
+
+        <div class="col-12 p-4 rounded">
           <div
             class="d-flex align-items-center justify-content-end button-section"
           >
-            <button  style="background: #FAF9FF;"  class="btn">Cancel</button>
-            <button class="btn btn-primary mx-4" type="submit">Save Changes</button>
+            <button style="background: #faf9ff" class="btn">Cancel</button>
+            <button class="btn btn-primary mx-4" type="submit">
+              Save Changes
+            </button>
           </div>
         </div>
       </div>
